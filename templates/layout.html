@@ -16,14 +16,17 @@
 <body>
     <nav>
         <a href="/">
-            <span role = "img" aria-label = "home">🏠</span>
+            <span role = "img" aria-label = "Home" title = "Home">🏠</span>
         </a>  |
         <a href="/about">
-            <span role = "img" aria-label = "about">😁</span>
+            <span role = "img" aria-label = "About" title = "About">😁</span>
         </a> |
         <a href="{% url 'posts:lists' %}">
-            <span role = "img" aria-label = "posts">📰</span>
-            </a>
+            <span role = "img" aria-label = "Posts" title = "Posts">📰</span>
+        </a> |
+        <a href="{% url 'users:register' %}">
+            <span role = "img" aria-label = "User Registeration" title = "User Registeration">🚀</span>
+        </a>
     </nav>
     <main>
         {% block content %}
